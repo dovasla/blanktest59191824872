@@ -9,7 +9,12 @@
       "Write",
       "Glob",
       "Grep",
-      "mcp__*"
+      "mcp__*",
+      "Bash(cp:*)",
+      "Bash(ls:*)",
+      "Bash(python3:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(ffprobe:*)"
     ]
   }
 }
