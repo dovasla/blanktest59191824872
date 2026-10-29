@@ -1,0 +1,37 @@
+{
+  "clip_id": "heavygod_test",
+  "source": "/mnt/project-files/tests/heavygod/heavygod_source.mp4",
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "duration": 20.0,
+  "player_name": "heavygod",
+  "kill_count": 4,
+  "kills": [
+    {
+      "killer": "heavygod"
+    },
+    {
+      "killer": "heavygod"
+    },
+    {
+      "killer": "heavygod"
+    },
+    {
+      "killer": "heavygod"
+    }
+  ],
+  "window_start": 3.15,
+  "window_end": 19.0,
+  "top_title": "HEAVYGOD OT 4K",
+  "nationality_colours": {
+    "colour_1": "#0038B8",
+    "colour_2": "#FFFFFF"
+  },
+  "nation": "israel",
+  "figure": "/mnt/project-files/tests/heavygod/character_heavygod.png",
+  "banner": "/mnt/project-files/tests/heavygod/banner_heavygod_1264x848.png",
+  "figure_scale": 0.6,
+  "figure_cx": 540,
+  "caption_file": "/mnt/project-files/tests/heavygod/out/heavygod_test_caption.txt"
+}
