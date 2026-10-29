@@ -5,7 +5,7 @@ RAW = "/mnt/project-files/tests/heavygod/rows_v2/raw_K1.png"
 DONK = "/mnt/project-files/clips/woxic_WOXIC_FIVE_MERCY/work/rows_donk/raw_K1.png"
 OUT = "/mnt/project-files/tests/heavygod/rows_v2/accent_K1.png"
 SS = 8
-WHITE, BLUE, RED = (255, 255, 255), (0, 57, 166), (213, 43, 30)  # default guess (Chile palette, Jord said pick best guess)
+WHITE, BLUE, RED = (255, 255, 255), (0, 56, 184), (0, 56, 184)  # Heavygod (Israeli per coordinator): blue #0038B8, white #FFFFFF; no red given, third slot uses blue
 # Heavygod default colours are not given, so the flag order is white, blue, red (spec), marked as DEFAULT.
 
 raw = Image.open(RAW).convert("RGBA")
