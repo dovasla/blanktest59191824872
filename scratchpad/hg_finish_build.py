@@ -12,7 +12,7 @@ inputs["source"] = "/mnt/project-files/tests/heavygod/heavygod_source.mp4"
 assets = csj_run.pick_player_assets(inputs)
 inputs = dict(inputs, banner=assets["banner"], figure=assets["character"])
 with Image.open(inputs["banner"]) as b:
-    if b.size != (1100, 600):
+    if b.size != (csj_banner_fit.BOX_W, csj_banner_fit.BOX_H):
         fitted = OUT / f"{clip}_banner_fitted.png"
         csj_banner_fit.fit(inputs["banner"], str(fitted))
         inputs = dict(inputs, banner=str(fitted))
