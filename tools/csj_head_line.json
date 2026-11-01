@@ -1,0 +1,11 @@
+{
+  "head_line_y": 1250,
+  "frame": "1080x1920",
+  "measured_from": "naf_1v5_build_v18.mp4, frame 5.0 s, top of the hair",
+  "rule": "character head flush with this line; chest runs past the bottom of the frame",
+  "set_by": "Jord, 28 Oct 2026",
+  "applies_to": "next build only, not a clip in progress",
+  "note": "30 Oct: head line moved to 1250 (Jord: character much lower). Earlier 700, 1000 and 1319 values were replaced. 30 Oct (Jord): 1250 saved as the default for every clip. Previous value 1000; 1319 was the original.",
+  "figure_scale_default": 0.8,
+  "figure_scale_note": "30 Oct: one default character size for every build (Jord asked). 0.8 is my pick; Jord to confirm."
+}

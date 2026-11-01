@@ -1,0 +1,9 @@
+{
+  "box_w": 1150,
+  "box_h": 650,
+  "box_x": -10,
+  "box_y": 1040,
+  "set_by": "Jord, 30 Oct 2026: default banner box. Jord, 31 Oct 2026: moved to y 1040. Jord, 31 Oct 2026 (final): box 1150x650 at x -10, y 1040. Jord, 31 Oct 2026 (chose the left option): mode is fit, banner shown at its own shape (969x650 for the Woxic banner), centred, soft edges, nothing cut off.",
+  "note": "Jord, 31 Oct 2026 18:05 UTC: banner box 1150x650, fit mode, x -10, y 1040.",
+  "mode": "fit"
+}
