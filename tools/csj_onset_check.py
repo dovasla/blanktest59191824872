@@ -86,10 +86,15 @@ def feed_threshold(source, fps, dur):
     """Per-clip rise threshold (21 Oct review fix 4). Rows drawn smaller give fewer red pixels, so the
     fixed 300 px is scaled from this clip's own feed: 0.3 x the 98th percentile of red counts, clamped to
     [120, 300]. Stops (returns None) when the feed is not found (98th percentile below 120 px)."""
-    step = round(fps / 10)
-    if step and abs(fps / 10 - step) < 0.01:
-        # Speed (27 Oct 2026): read every step-th frame of the cached per-frame red counts, the same
+    scan = csj_feedcache.SCAN_FPS
+    if fps % scan == 0 and fps >= scan:
+        # Speed (1 Nov 2026, Jord): the whole-clip scan runs at 30 fps, not the source rate. Every third
+        # 30 fps count is the same frame the fps=10 filter returned, so the threshold is unchanged.
+        counts = csj_feedcache.scan_red_counts(source, scan)[::scan // 10][:int(np.ceil(dur * 10))]
+    elif fps % 10 == 0:
+        # Speed (27 Oct 2026): read every step-th frame of the cached source-rate red counts, the same
         # frames the fps=10 filter returned (checked on 68790a62: same p98). One decode per source.
+        step = int(fps // 10)
         counts = csj_feedcache.red_counts(source)[::step][:int(np.ceil(dur * 10))]
     else:
         x, y, w, h = FEED_CROP

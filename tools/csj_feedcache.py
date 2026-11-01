@@ -5,6 +5,7 @@ red_counts(source) returns the red-outline pixel count of the feed crop for ever
 source once (about 10 s for 64 s at 60 fps). Later calls, from the onset threshold, the gates and the
 checker, read the cached array. The cache key holds the file name, size, modified time and crop, so a
 changed source decodes again. Cache files live in the system temp folder and are safe to delete.
+scan_red_counts(source) is the same count at 30 fps, used for the whole-clip threshold scan (1 Nov 2026).
 """
 import hashlib
 import subprocess
@@ -16,9 +17,12 @@ import numpy as np
 FEED_CROP = (1620, 40, 300, 280)  # source pixels, csj-process Step 2
 
 
-def _cache_path(source):
+SCAN_FPS = 30  # whole-clip feed scan rate (Jord, 1 Nov 2026). Kill windows stay at the source rate.
+
+
+def _cache_path(source, fps=None):
     st = Path(source).stat()
-    key = f"{Path(source).name}|{st.st_size}|{int(st.st_mtime)}|{FEED_CROP}"
+    key = f"{Path(source).name}|{st.st_size}|{int(st.st_mtime)}|{FEED_CROP}|fps={fps}"
     d = Path(tempfile.gettempdir()) / "csj_feed_cache"
     d.mkdir(parents=True, exist_ok=True)
     return d / (hashlib.md5(key.encode()).hexdigest() + "_red.npy")
@@ -26,14 +30,26 @@ def _cache_path(source):
 
 def red_counts(source):
     """Red outline pixels per source frame in the feed crop, streamed in chunks and cached."""
-    cp = _cache_path(source)
+    return _red_counts_at(source, None)
+
+
+def scan_red_counts(source, fps=SCAN_FPS):
+    """Red outline pixels per frame at a lower rate (the fps filter keeps every n-th source frame).
+    For a source rate that is a whole multiple of fps, every n-th frame of this array is the same frame
+    the source-rate array holds at that time, so the 10 fps threshold reads are unchanged."""
+    return _red_counts_at(source, fps)
+
+
+def _red_counts_at(source, fps):
+    cp = _cache_path(source, fps)
     if cp.exists():
         try:
             return np.load(cp)
         except (OSError, ValueError):
             pass
     x, y, w, h = FEED_CROP
-    proc = subprocess.Popen(["ffmpeg", "-v", "error", "-i", source, "-vf", f"crop={w}:{h}:{x}:{y}",
+    vf = f"fps={fps}," if fps else ""
+    proc = subprocess.Popen(["ffmpeg", "-v", "error", "-i", source, "-vf", f"{vf}crop={w}:{h}:{x}:{y}",
                              "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
     counts, size, chunk = [], w * h * 3, 120
     while True:
