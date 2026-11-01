@@ -1,0 +1,19 @@
+{
+  "name": "csj_scan_area",
+  "description": "Standard kill feed scan area. Every clip scans this area by eye, and by OCR, for kill timings and kill confirmation.",
+  "source_crop": {
+    "x": 1540,
+    "y": 40,
+    "w": 380,
+    "h": 280
+  },
+  "slots": {
+    "pitch_px": 34,
+    "count": 7,
+    "first_y_in_crop": 34
+  },
+  "png": "tools/csj_scan_area.png",
+  "set_by": "Jord, 30 Oct 2026",
+  "status": "widened left 80 px on 30 Oct so assist rows fit; not yet confirmed by Jord",
+  "changed_by": "thread request, 30 Oct 2026"
+}

@@ -1,0 +1,165 @@
+{
+  "source": "Art direction for the 20 approved themes (29 Oct 2026, rewritten). Text-free. Colours come only from colour 1, colour 2 and colour 3 of the clip. Edges fade out over 140 px, so keep the main subject inside that margin.",
+  "themes": {
+    "Dragon Storm": {
+      "scene": "A dragon coils through a storm cloud above a dark ridge, its head turned toward the viewer.",
+      "composition": "Dragon body curves from bottom left up to the top right. Head sits in the upper right third. Wings open toward both sides.",
+      "back": "Thick storm clouds with rolled edges, in shades of colour 1 and colour 2.",
+      "middle": "Forked lightning and drifting sparks. The brightest bolt uses colour 3.",
+      "front": "Dragon scales, claws and horns in bold ink outline, with colour 1 and colour 2 fills.",
+      "mood": "Raw power and speed."
+    },
+    "Serpent River": {
+      "scene": "A giant serpent rises out of a fast, rocky river.",
+      "composition": "Serpent forms an S-curve from the bottom edge up to the top right, with its head highest.",
+      "back": "Rocky banks and rushing water in deep tones of colour 1.",
+      "middle": "Foam and spray in pale tints of colour 2 and colour 3.",
+      "front": "Serpent body with a bold scale pattern in ink. Scale highlights use colour 2.",
+      "mood": "Pressure and flow."
+    },
+    "Nine-Tail Fox": {
+      "scene": "A fox with nine tails fans out behind it under a night sky.",
+      "composition": "Fox centred, tails spread in a wide arc behind it. Fox face sits in the middle third.",
+      "back": "Night sky with a large moon, in deep tones of colour 1.",
+      "middle": "Tails with flame-like tips in colour 2 and colour 3.",
+      "front": "Fox head, eyes and paws in bold ink. Fur marks in sharp colour 2.",
+      "mood": "Mystery and cunning."
+    },
+    "Tengu Sky Clash": {
+      "scene": "Two tengu warriors clash in mid-air above a temple roof.",
+      "composition": "Warriors on a diagonal, facing each other. Their weapons cross at the centre.",
+      "back": "Sky and clouds in soft tones of colour 1.",
+      "middle": "Feather and dust bursts. Colour 2 and colour 3 sparks where the blades meet.",
+      "front": "Warriors, masks and weapons in sharp ink, with colour 1 and colour 2 fills.",
+      "mood": "Duel and tension."
+    },
+    "Neon Rain City": {
+      "scene": "A rainy street at night, lit by signs with no readable letters.",
+      "composition": "Street runs from the bottom edge to a vanishing point at the centre. Buildings frame both sides.",
+      "back": "Dark buildings and falling rain lines in deep colour 1.",
+      "middle": "Neon glow and reflections on wet ground, in colour 2 and colour 3.",
+      "front": "A silhouette figure with an umbrella, with a sharp ink edge and light from behind.",
+      "mood": "Night and speed."
+    },
+    "Samurai Petal Storm": {
+      "scene": "A samurai stands still while a storm of cherry petals swirls around him.",
+      "composition": "Samurai in the centre, seen from a slight low angle, blade raised.",
+      "back": "Petal storm in pale tints of colour 2 and colour 1.",
+      "middle": "Wind swirls and loose petals in colour 3 and colour 2.",
+      "front": "Samurai armour and raised blade in bold ink, with colour 1 fills.",
+      "mood": "Calm before the strike."
+    },
+    "Kaiju Skyline": {
+      "scene": "A huge kaiju towers over a city skyline at dusk.",
+      "composition": "Kaiju on the right, head in the upper third. Skyline runs low across the left and bottom.",
+      "back": "Dusk sky gradient from colour 1 to colour 2, with far buildings in dark tones.",
+      "middle": "Smoke, dust and drifting sparks in pale colour 3 tints.",
+      "front": "Kaiju body in a roaring pose, bold ink, with colour 1 and colour 2 fills.",
+      "mood": "Scale and threat."
+    },
+    "Mecha Hangar Duel": {
+      "scene": "Two mecha face off inside a large hangar.",
+      "composition": "Mechs stand left and right, facing the centre. The gap between them is the focal point.",
+      "back": "Hangar walls, ribbed beams and lights in dark colour 1.",
+      "middle": "Sparks and steam clouds in colour 2 and colour 3 tints.",
+      "front": "Mech armour plates in bold ink, with colour 1, colour 2 and colour 3 panels.",
+      "mood": "Heavy and mechanical."
+    },
+    "Fleet Nebula": {
+      "scene": "A fleet of ships sails through a bright nebula.",
+      "composition": "Ships in a V shape. The leading ship sits at the centre and the others trail behind it.",
+      "back": "Nebula clouds in layered tones of colour 1 and colour 2.",
+      "middle": "Stars, light trails and small glowing dust.",
+      "front": "Ship hulls with clean, sharp outlines. Running lights in colour 3.",
+      "mood": "Space and scale."
+    },
+    "Sunken Temple": {
+      "scene": "An old temple sits deep under water, with light rays coming down from above.",
+      "composition": "Temple at the bottom centre. Light rays fall from the top edge toward it.",
+      "back": "Deep water gradient, dark colour 1 at the bottom and lighter colour 2 at the top.",
+      "middle": "Bubbles and light rays in pale tints of colour 2.",
+      "front": "Temple columns and roof in bold ink, with colour 3 carvings.",
+      "mood": "Mystery and depth."
+    },
+    "Ghost Pirate Storm": {
+      "scene": "A ghost ship sails through a storm at night.",
+      "composition": "Ship on a diagonal from top left to bottom right, with waves below it.",
+      "back": "Storm sky with heavy clouds in deep colour 1.",
+      "middle": "Lightning bolts and sea spray in colour 2 and colour 3 tints.",
+      "front": "Ship and ghostly pirates in bold ink. Pale colour 2 glow around the ghosts.",
+      "mood": "Eerie and fast."
+    },
+    "Frost Phoenix": {
+      "scene": "A phoenix made of ice and frost rises over snowy peaks.",
+      "composition": "Phoenix centred, wings spread to both edges. Peaks sit low along the bottom.",
+      "back": "Snow peaks and a pale sky in colour 1 and colour 2 tints.",
+      "middle": "Ice shards, mist and frost sparkle in colour 3.",
+      "front": "Phoenix feathers in bold ink, with colour 2 and colour 1 fills.",
+      "mood": "Cold and power."
+    },
+    "Demon Gate": {
+      "scene": "A huge gate stands open on a dark land, with demons waiting at its base.",
+      "composition": "Gate tall and centred. Demons gather at the bottom centre, half hidden in smoke.",
+      "back": "Dark sky and cracked land in deep colour 1.",
+      "middle": "Smoke and rising embers in colour 2 and colour 3.",
+      "front": "Gate frame and demon shapes in bold ink. Colour 2 glow shows through the opening.",
+      "mood": "Dread and power."
+    },
+    "Spirit Sakura Forest": {
+      "scene": "A forest of cherry trees, with spirit lights floating between the trunks.",
+      "composition": "A path leads from the bottom edge into the centre, with trees framing both sides.",
+      "back": "Trees and a soft sky in colour 1 and colour 2 tints.",
+      "middle": "Falling petals and glowing spirit lights in colour 3.",
+      "front": "A spirit figure standing on the path, with a sharp ink outline.",
+      "mood": "Calm and mystery."
+    },
+    "Shattered Clock": {
+      "scene": "A giant clock breaks into pieces that fly outward through the air.",
+      "composition": "Clock face centred, pieces flying out toward the edges. The clock face has no numerals.",
+      "back": "Plain sky gradient from colour 1 to colour 2.",
+      "middle": "Shards and dust in colour 2 and colour 3 tints, with motion trails.",
+      "front": "Clock rings and gear teeth in bold ink, with colour 1 and colour 3 metal.",
+      "mood": "Time running out."
+    },
+    "Beast Arena": {
+      "scene": "Two beasts fight inside a round arena, with a crowd shape around the edge.",
+      "composition": "Arena ring centred. Beasts stand left and right, facing each other.",
+      "back": "Arena walls and crowd shapes in dark colour 1.",
+      "middle": "Dust clouds and sparks in colour 2 and colour 3 tints.",
+      "front": "Beasts in bold ink, with colour 2 and colour 1 fills.",
+      "mood": "Fight and crowd energy."
+    },
+    "Black Hole": {
+      "scene": "A black hole pulls light and stars inward.",
+      "composition": "Hole centred. Light spirals in from the edges toward it.",
+      "back": "Star field in deep colour 1, with small pale stars.",
+      "middle": "Light streaks bending toward the centre in colour 2 and colour 3.",
+      "front": "Dark core with a bold rim. The rim has a bright colour 3 edge.",
+      "mood": "Pull and danger."
+    },
+    "Griffin Sky": {
+      "scene": "A griffin dives across a wide open sky.",
+      "composition": "Griffin on a diagonal from top left to bottom right, wings open.",
+      "back": "Clouds and sky gradient in colour 1 and colour 2.",
+      "middle": "Wind lines and feather trails in colour 3 tints.",
+      "front": "Griffin body and wings in bold ink, with colour 2 and colour 1 fills.",
+      "mood": "Speed and freedom."
+    },
+    "Spirit Wolf Aurora": {
+      "scene": "A spirit wolf howls under a bright aurora.",
+      "composition": "Wolf centre low, head raised. Aurora bands arc across the top.",
+      "back": "Aurora bands in layered tones of colour 1, colour 2 and colour 3.",
+      "middle": "Snow and drifting light specks in pale tints.",
+      "front": "Wolf in bold ink, with a colour 2 glow along its outline.",
+      "mood": "Wild and calm."
+    },
+    "Rooftop Speed Lines": {
+      "scene": "Two figures race across rooftops, with speed lines trailing behind them.",
+      "composition": "Figures on a diagonal, rooftops below them and sky above.",
+      "back": "Sky and roof shapes in colour 1 and colour 2 tints.",
+      "middle": "Speed lines in colour 3 and colour 1.",
+      "front": "Figures in a running pose, bold ink, with colour 2 fills.",
+      "mood": "Fast and loud."
+    }
+  }
+}

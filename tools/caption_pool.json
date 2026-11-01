@@ -1,0 +1,158 @@
+{
+  "version": 2,
+  "note": "Intensity captions for CS Junkie kill clips (Jord, 26 Oct 2026). Caps hook with player, count and weapon, then a short punchy line. Placeholders: {COUNT} (digits) and {PLAYER} (name as read from the clip), always upper case. Facts with an upper-case key (ADJ, TEAM, COUNTRY, ENEMY_COUNTRY, WEAPON) are filled from tools/clip_lookup/<clip>.json only when high confidence. Lines with a 'needs' list are personalised; generic lines have no 'needs'. Every line keeps the literal 5K-style count token so csj_checker.py step 9 passes. Hashtags are appended by csj_caption_picker.py. Old sentence-case pool: caption_pool_v1_sentence_case.json.",
+  "templates": [
+    {
+      "id": "h01",
+      "text": "{PLAYER} INSANE ACE! 💀 {COUNT}K IN ONE ROUND! 🔥"
+    },
+    {
+      "id": "h02",
+      "text": "GODLIKE ROUND FROM {PLAYER}! 💀 {COUNT}K IN CS2! 🔥"
+    },
+    {
+      "id": "h03",
+      "text": "PERFECT ACE FROM {PLAYER}! 🔥 {COUNT}K IN CS2!"
+    },
+    {
+      "id": "h04",
+      "text": "{PLAYER} ON ANOTHER LEVEL! 💀 {COUNT}K IN ONE ROUND! 🔥"
+    },
+    {
+      "id": "h05",
+      "text": "UNREAL ACE BY {PLAYER}! 💀 {COUNT}K IN ONE ROUND! 🔥"
+    },
+    {
+      "id": "h06",
+      "text": "{PLAYER} GOES OFF! 💀 {COUNT}K IN CS2! 🔥"
+    },
+    {
+      "id": "h07",
+      "text": "ABSOLUTE MADNESS FROM {PLAYER}! 🔥 {COUNT}K IN ONE ROUND!"
+    },
+    {
+      "id": "h08",
+      "text": "{PLAYER} DELETED THE WHOLE ENEMY TEAM! 💀 {COUNT}K! 🔥"
+    },
+    {
+      "id": "h09",
+      "text": "CRAZY ACE FROM {PLAYER}! 💀 {COUNT}K IN ONE ROUND! 🔥"
+    },
+    {
+      "id": "h10",
+      "text": "{COUNT}K IN ONE ROUND! {PLAYER} IS UNSTOPPABLE! 💀🔥"
+    },
+    {
+      "id": "h11",
+      "text": "{PLAYER} ENDED THE ROUND SOLO! 💀 {COUNT}K IN CS2! 🔥"
+    },
+    {
+      "id": "h12",
+      "text": "NO ESCAPE FROM {PLAYER}! 💀 {COUNT}K IN ONE ROUND! 🔥"
+    },
+    {
+      "id": "h13",
+      "text": "{PLAYER} TURNED THE ROUND INTO A MASSACRE! 💀 {COUNT}K! 🔥"
+    },
+    {
+      "id": "h14",
+      "text": "{PLAYER} HAD THE WHOLE ROUND LOCKED! 🔥 {COUNT}K IN CS2!"
+    },
+    {
+      "id": "h15",
+      "text": "{COUNT}K FROM {PLAYER}! 💀 PURE FIRE! 🔥"
+    },
+    {
+      "id": "h16",
+      "text": "{PLAYER} CAN'T BE STOPPED! 🔥 {COUNT}K IN ONE ROUND! 💀"
+    },
+    {
+      "id": "h17",
+      "text": "{PLAYER} WITH {COUNT}K! 💀 THE FEED IS BURNING! 🔥"
+    },
+    {
+      "id": "h18",
+      "text": "INSANE ROUND FROM {PLAYER}! 💀 {COUNT}K IN CS2! 🔥"
+    },
+    {
+      "id": "h19",
+      "text": "{PLAYER} ACE! 💀 FULL SEND, {COUNT}K! 🔥"
+    },
+    {
+      "id": "h20",
+      "text": "{PLAYER} OWNS THE ENTIRE FEED! 💀 {COUNT}K IN ONE ROUND! 🔥"
+    },
+    {
+      "id": "w01",
+      "needs": [
+        "weapon"
+      ],
+      "text": "{PLAYER} INSANE {WEAPON} ACE! 💀 {COUNT}K IN CS2! 🔥"
+    },
+    {
+      "id": "w02",
+      "needs": [
+        "weapon"
+      ],
+      "text": "PERFECT {WEAPON} ACE FROM {PLAYER}! 🔥 {COUNT}K IN ONE ROUND!"
+    },
+    {
+      "id": "w03",
+      "needs": [
+        "weapon"
+      ],
+      "text": "{PLAYER} + {WEAPON} = {COUNT}K! 💀 ABSOLUTE MADNESS! 🔥"
+    },
+    {
+      "id": "w04",
+      "needs": [
+        "weapon"
+      ],
+      "text": "GODLIKE {WEAPON} ROUND! 💀 {PLAYER} WITH {COUNT}K! 🔥"
+    },
+    {
+      "id": "w05",
+      "needs": [
+        "weapon"
+      ],
+      "text": "{PLAYER} MADE THE {WEAPON} LOOK UNFAIR! 💀 {COUNT}K! 🔥"
+    },
+    {
+      "id": "p01",
+      "needs": [
+        "adj"
+      ],
+      "text": "{ADJ} PRECISION FROM {PLAYER}! 💀 {COUNT}K IN ONE ROUND! 🔥"
+    },
+    {
+      "id": "p02",
+      "needs": [
+        "team"
+      ],
+      "text": "{PLAYER} CARRIES {TEAM}! 💀 {COUNT}K IN CS2! 🔥"
+    },
+    {
+      "id": "p03",
+      "needs": [
+        "enemy_country"
+      ],
+      "text": "{ENEMY_COUNTRY} GOT DELETED BY {PLAYER}! 💀 {COUNT}K IN ONE ROUND! 🔥"
+    },
+    {
+      "id": "p04",
+      "needs": [
+        "country",
+        "enemy_country"
+      ],
+      "text": "{COUNTRY} VS {ENEMY_COUNTRY}, AND {PLAYER} WINS! 💀 {COUNT}K! 🔥"
+    },
+    {
+      "id": "p05",
+      "needs": [
+        "adj",
+        "weapon"
+      ],
+      "text": "{ADJ} {WEAPON} DOMINANCE! 💀 {PLAYER} WITH {COUNT}K! 🔥"
+    }
+  ]
+}
