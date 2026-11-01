@@ -1,0 +1,13 @@
+{
+  "figure_glow": {
+    "inner_white_stroke_px": 4,
+    "inner_white_rgb_measured": [213, 213, 210],
+    "outer_red_glow_px": 10,
+    "outer_red_rgb_measured": [98, 70, 70],
+    "red_core_rgb_measured": [78, 38, 44],
+    "fade": "soft, no hard edge, fades into the background",
+    "measured_from": "naf_1v5_build_v18.mp4, frame 5.0 s, column x=520 across the top of the head",
+    "status": "approximate, one column, one frame. Check on a second frame before locking."
+  },
+  "set_by": "Jord, 28 Oct 2026, keep on every clip"
+}
