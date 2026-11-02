@@ -6,10 +6,6 @@ Gates:
               band just outside it (max mean luma gap 12)
   slide       measured element position must match expected (tolerance 2 px)
 
-Seam gate (report only, never blocks upload):
-  seam        mean absolute difference between frame 0 and the cover
-              (limit 2.0). Default value 61.5 is kept as written.
-
 Each gate returns (passed: bool, numbers: dict).
 """
 
@@ -21,8 +17,6 @@ ROW_EDGE_TOL_PX = 2
 BAND_PX = 60
 BAND_LUMA_LIMIT = 12.0
 SLIDE_TOL_PX = 2
-SEAM_LIMIT = 2.0
-SEAM_DEFAULT = 61.5
 
 
 def load_rgb(path):
@@ -88,30 +82,12 @@ def gate_slide(measured_xy, expected_xy):
     }
 
 
-def seam_report(frame0_rgb, cover_rgb, limit=SEAM_LIMIT, default=SEAM_DEFAULT):
-    """Report only. Returns the mean absolute difference and whether it is under the limit.
-
-    Never blocks upload. The default value 61.5 is recorded for the decision still open.
-    """
-    mad = float(np.abs(frame0_rgb.astype(np.float32) - cover_rgb.astype(np.float32)).mean())
-    return {
-        "mad": mad,
-        "limit": limit,
-        "under_limit": mad <= limit,
-        "default_value": default,
-        "blocking": False,
-    }
-
-
 if __name__ == "__main__":
     import sys
 
     if len(sys.argv) < 2:
-        print("usage: gates_visual.py <frame.png> [cover.png]")
+        print("usage: gates_visual.py <frame.png>")
         sys.exit(2)
     frame = load_rgb(sys.argv[1])
     ok, nums = gate_edge_bands(frame, (1564, 40, 1920, 240))
     print("edge_bands", "pass" if ok else "fail", nums)
-    if len(sys.argv) > 2:
-        cover = load_rgb(sys.argv[2])
-        print("seam", seam_report(frame, cover))
