@@ -1,17 +1,6 @@
 # Kill feed scan: registry row 26 (WOXIC, no ID)
-Source: unsorted/68fdff3055b5db1beb490ecb.mp4 (1920x1080, 60 fps, 24.0 s)
-Method: feed crop 1564,40,356,200 at 2 fps (contact sheet). Times ESTIMATED to about 0.5 s.
-Status: PARTIAL. Named player (woxic) does not appear as a killer in this feed read. Map and player unconfirmed.
-
-| # | Time (s, approx) | Killer -> victim | Note |
-|---|---|---|---|
-| 1 | 0.0 to 4.0 | dav1d -> MartinezSa | already on screen at start |
-| 2 | ~4.5 | alex -> NQZ | |
-| 3 | ~8.5 | alex -> dgt | |
-| 4 | ~9.5 to 10.0 | alex -> dav1d | |
-| 5 | ~15.0 | alex -> biguzera | |
-| 6 | ~22.0 | alex -> snow | |
-
-Count: 6 bars read (5 new kills by alex, plus 1 carried over from before the start). Expected 4 or 5, so the start bar may be a leftover and needs a 60 fps check.
-Missed or doubled rows: none found at 2 fps. Overlap under 1.2 s not checked at 60 fps.
-Unclear: whether the bar at 0.0 s is a kill inside the clip or left over from before it.
+Source: unsorted/68fdff3055b5db1beb490ecb.mp4 (1920x1080, 60 fps, 23.98 s)
+Method: built tool tools/csj_kill_b.py (approach B, woxic template), feed crop at 30 fps.
+Status: 0 woxic kills found (tool flag: expected 4 or 5, found 0). Matches the earlier 2 fps read.
+Feed read earlier at 2 fps (approximate, not re-checked by the tool): dav1d -> MartinezSa at start; alex -> NQZ ~4.5 s; alex -> dgt ~8.5 s; alex -> dav1d ~9.5 to 10 s; alex -> biguzera ~15 s; alex -> snow ~22 s. Woxic is not a killer in this feed.
+Conclusion: the clip is not a woxic clip, or the player is wrong. Jord to confirm the player before any build.
